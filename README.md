@@ -40,11 +40,10 @@ MongoDB: Yorumlar için NoSQL veritabanı kullanıldı. MongoDB Compass ile yoru
 
 
 Docker: API, MSSQL, MongoDB ve RabbitMQ servisleri Docker konteynerlerinde çalıştırıldı. Tüm bileşenlerin çalıştığı doğrulandı.
-![Ekran görüntüsü 2025-07-01 173752](https://github.com/user-attachments/assets/50664851-7c2f-446f-9939-3d3266a9fce0)
+![Ekran görüntüsü 2025-07-01 170056](https://github.com/user-attachments/assets/6b596930-6f54-4e10-a1be-d990fed4c6a6)
+![Ekran görüntüsü 2025-07-01 164527](https://github.com/user-attachments/assets/e4eff519-c3c0-4635-9b33-c4dc3594d4a0)
+![Ekran görüntüsü 2025-07-01 173752](https://github.com/user-attachments/assets/839569e0-371a-4fb2-9eb0-dd978f0c1758)
 
-![Ekran görüntüsü 2025-07-01 170056](https://github.com/user-attachments/assets/948ad7b3-53a8-408f-a88e-44f50195c3bf)
-
-![Ekran görüntüsü 2025-07-01 164527](https://github.com/user-attachments/assets/a2fd03ec-e56d-404b-9975-a5db99b789b4)
 
 RabbitMQ: Rezervasyon kuyrukları için kullanıldı. Yönetim paneli yerel sunucuda kontrol edildi.
 
