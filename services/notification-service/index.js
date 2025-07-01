@@ -4,7 +4,7 @@ const cron = require('node-cron');
 
 const dbConfig = {
   user: 'sa',
-  password: 'Msixyz7777@;',
+  password: '....@;',
   server: 'mssql',
   database: 'hotel_db',
   options: { encrypt: true, trustServerCertificate: true },
