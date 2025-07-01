@@ -1,0 +1,63 @@
+version: '3'
+services:
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "3000:3000"
+    depends_on:
+      - admin-service
+      - search-service
+      - booking-service
+      - comments-service
+  admin-service:
+    build: ./services/admin-service
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mssql
+  search-service:
+    build: ./services/search-service
+    ports:
+      - "3002:3002"
+    depends_on:
+      - mssql
+      - redis
+  booking-service:
+    build: ./services/booking-service
+    ports:
+      - "3003:3003"
+    depends_on:
+      - mssql
+      - rabbitmq
+  comments-service:
+    build: ./services/comments-service
+    ports:
+      - "3004:3004"
+    depends_on:
+      - mongodb
+  notification-service:
+    build: ./services/notification-service
+    depends_on:
+      - mssql
+      - rabbitmq
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Msixyz7777@;
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"

@@ -1,0 +1,12 @@
+{
+  "name": "booking-service",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mssql": "^9.0.0",
+    "amqplib": "^0.8.0"
+  }
+}
